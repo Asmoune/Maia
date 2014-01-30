@@ -3,7 +3,7 @@
 <h3>Public Debates</h3>
 </div>
 <div class="span6">
-<button class="btn btn-large btn-info pull-right" type="button">Create a new Public Debate</button>
+<button class="btn btn-large btn-info pull-right" type="button" data-toggle="modal" data-target="#myModal">Create a new Public Debate</button>
 </div>
 </div>
 
@@ -68,4 +68,9 @@
 	</table>
 	</div>
 	</div>
+</div>
+
+<!-- Modal window-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<%= render 'debates/objection' %>
 </div>
