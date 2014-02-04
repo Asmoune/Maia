@@ -1,0 +1,23 @@
+<tr>
+        <td> <b>Tag</b></td>
+   </tr>
+   <tr>
+        <td> 
+          <div class="row">
+            <div class="span8">
+              <%= tag.name %>
+            </div>
+            <div class="span4 pull-right">
+              <%= render 'user', contribution: tag %>
+            </div>
+          </div>
+        </td>
+   </tr>
+   <tr>
+        <td>
+<div class="row">
+<div class="span6 offset5 pull-right">
+<button class="btn btn-large btn-primary pull-right" type="button" data-toggle="modal" data-target="#voteModal">Vote</button>
+</div>
+</div>
+<%= render 'more', contribution: tag %>
